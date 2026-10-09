@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PREFIOP — The Command Center for Modern Field Operations</title>
+  <meta name="description" content="PREFIOP helps teams coordinate jobs, people, schedules, assets, customers, and locations from one operational workspace.">
+  
+  <!-- Modern Typography: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Ambient background glow effects -->
+  <div class="ambient-glow ambient-glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-middle" aria-hidden="true"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="site-header" id="header">
+        <div class="header-container">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="PREFIOP Home">
+        <svg class="logo-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.75"/>
+          <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="1.75"/>
+          <path d="M14 1V7M14 21V27M1 14H7M21 14H27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">PREFIOP</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-links" id="primary-navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Platform</a>
+        <a href="features.html" class="nav-link">Features</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Auth & CTA Actions -->
+      <div class="header-actions">
+        <a href="pricing.html" class="btn btn-primary btn-sm">Get started</a>
+        
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <nav class="mobile-nav-links">
+          <a href="index.html" class="mobile-nav-link active">Platform</a>
+          <a href="features.html" class="mobile-nav-link">Features</a>
+          <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+          <a href="about.html" class="mobile-nav-link">About</a>
+          <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </nav>
+        <div class="mobile-drawer-actions">
+          <a href="pricing.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Get started</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="hero">
+      <div class="hero-container">
+        <div class="info-badge" style="margin: 0 auto 20px;">
+          <span class="sparkle-icon">✦</span>
+          <span>PREMIUM FIELD OPERATIONS</span>
+        </div>
+
+        <h1 class="hero-headline">
+          Run every field operation<br>
+          from one command center
+        </h1>
+        
+        <p class="hero-subtitle">
+          Coordinate jobs, teams, schedules, assets, and service locations with a clear operational view built for work in the field.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="pricing.html" class="btn btn-primary">Explore platform</a>
+          <a href="#interactive-demo" class="btn btn-secondary">View live demo</a>
+        </div>
+
+        <a href="#interactive-demo" class="live-demo-badge" id="demoLink">
+          <span class="live-pulse"></span>
+          <span>Live field operations environment</span>
+          <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+        <!-- DASHBOARD PREVIEW INTERFACE -->
+        <div class="dashboard-viewport" id="interactive-demo">
+          <div class="dashboard-window">
+            
+            <!-- Separate Browser Window Chrome / Titlebar -->
+            <div class="browser-window-bar" aria-label="Browser Window Controls">
+              <div class="browser-bar-left">
+                <div class="browser-dots" aria-hidden="true">
+                  <span class="b-dot b-dot-close" title="Close"></span>
+                  <span class="b-dot b-dot-minimize" title="Minimize"></span>
+                  <span class="b-dot b-dot-maximize" title="Maximize"></span>
+                </div>
+              </div>
+
+              <div class="browser-bar-center">
+                <div class="browser-url-pill">
+                  <svg class="browser-lock-icon" width="10" height="10" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <path d="M4 6V4a4 4 0 118 0v2h1a1 1 0 011 1v7a1 1 0 01-1 1H3a1 1 0 01-1-1V7a1 1 0 011-1h1zm2-2v2h4V4a2 2 0 10-4 0z"/>
+                  </svg>
+                  <span class="browser-url-protocol">https://</span><span class="browser-url-domain">app.prefiop.com</span><span class="browser-url-path">/operations/live</span>
+                </div>
+              </div>
+
+              <div class="browser-bar-right" aria-hidden="true">
+                <div class="browser-actions">
+                  <span class="browser-action-icon">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M2 8h12M10 4l4 4-4 4"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dashboard Image Preview inside Browser Window -->
+            <div class="dashboard-preview-image-wrap">
+              <img src="assets/images/dashboard-preview.png" alt="PREFIOP Field Operations Command Center Dashboard" class="dashboard-preview-img" width="1024" height="516" loading="eager">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: EVERYTHING YOUR FIELD TEAMS NEED / 3 BLUEPRINT CARDS -->
+    <section class="section section-architecture" id="architecture">
+      <div class="container">
+        
+        <div class="section-heading text-center">
+          <h2 class="section-title">
+            Everything your field teams need.<br>
+            One operational view.
+          </h2>
+        </div>
+
+        <div class="blueprint-grid">
+          
+          <!-- Card 1: LIVE DISPATCH -->
+          <div class="blueprint-card">
+            <div class="blueprint-header">
+              <span class="blueprint-tag">LIVE DISPATCH</span>
+              <p class="blueprint-desc">
+                Assign, prioritize, and monitor field work as it happens.
+              </p>
+            </div>
+            
+            <div class="blueprint-visual">
+              <div class="blueprint-canvas-frame">
+                <svg viewBox="0 0 280 180" class="wireframe-svg" fill="none">
+                  <!-- Structural Grid -->
+                  <rect x="25" y="20" width="230" height="140" rx="6" stroke="#26262b" stroke-width="1"/>
+                  <line x1="25" y1="55" x2="255" y2="55" stroke="#26262b" stroke-width="1"/>
+                  <line x1="85" y1="55" x2="85" y2="160" stroke="#26262b" stroke-width="1"/>
+                  
+                  <!-- Highlighted active node card -->
+                  <rect x="95" y="65" width="150" height="42" rx="4" stroke="#4f46e5" stroke-width="1.5" fill="rgba(79, 70, 229, 0.08)"/>
+                  <rect x="105" y="74" width="70" height="6" rx="3" fill="#6366f1"/>
+                  <rect x="105" y="87" width="110" height="5" rx="2.5" fill="#312e81"/>
+                  
+                  <!-- Blueprint Accent Lines -->
+                  <line x1="110" y1="125" x2="230" y2="125" stroke="#1f2937" stroke-width="1.5"/>
+                  <line x1="110" y1="140" x2="190" y2="140" stroke="#1f2937" stroke-width="1.5"/>
+
+                  <!-- Active pulse badge -->
+                  <circle cx="230" cy="85" r="4" fill="#38bdf8"/>
+                  <circle cx="230" cy="85" r="8" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="blueprint-footer">
+              <a href="features.html#dispatch" class="explore-link">
+                <span>EXPLORE DISPATCH</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: WORKFORCE COORDINATION -->
+          <div class="blueprint-card">
+            <div class="blueprint-header">
+              <span class="blueprint-tag">WORKFORCE COORDINATION</span>
+              <p class="blueprint-desc">
+                See team availability, workload, schedules, and assignments in one place.
+              </p>
+            </div>
+            
+            <div class="blueprint-visual">
+              <div class="blueprint-canvas-frame">
+                <svg viewBox="0 0 280 180" class="radar-svg" fill="none">
+                  <!-- Radar concentric circles -->
+                  <circle cx="140" cy="90" r="65" stroke="#26262b" stroke-width="1" stroke-dasharray="3 3"/>
+                  <circle cx="140" cy="90" r="42" stroke="#26262b" stroke-width="1"/>
+                  <circle cx="140" cy="90" r="20" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4 2"/>
+                  
+                  <!-- Axes -->
+                  <line x1="140" y1="20" x2="140" y2="160" stroke="#26262b" stroke-width="1"/>
+                  <line x1="70" y1="90" x2="210" y2="90" stroke="#26262b" stroke-width="1"/>
+                  
+                  <!-- Radar sweep arc / beam -->
+                  <path d="M140 90 L180 50 A 65 65 0 0 0 140 25 Z" fill="url(#radarSweep)" opacity="0.45"/>
+                  <defs>
+                    <linearGradient id="radarSweep" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+                      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+
+                  <!-- Target points -->
+                  <circle cx="165" cy="62" r="3.5" fill="#22d3ee"/>
+                  <circle cx="112" cy="115" r="3" fill="#0284c7"/>
+                  <circle cx="140" cy="90" r="2.5" fill="#ffffff"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="blueprint-footer">
+              <a href="features.html#teams" class="explore-link">
+                <span>EXPLORE TEAMS</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: ASSET & SITE VISIBILITY -->
+          <div class="blueprint-card">
+            <div class="blueprint-header">
+              <span class="blueprint-tag">ASSET & SITE VISIBILITY</span>
+              <p class="blueprint-desc">
+                Keep equipment, locations, inspections, and maintenance activity connected.
+              </p>
+            </div>
+            
+            <div class="blueprint-visual">
+              <div class="blueprint-canvas-frame">
+                <svg viewBox="0 0 280 180" class="sine-svg" fill="none">
+                  <!-- Grid -->
+                  <line x1="30" y1="90" x2="250" y2="90" stroke="#26262b" stroke-width="1"/>
+                  <line x1="140" y1="20" x2="140" y2="160" stroke="#26262b" stroke-width="1"/>
+                  
+                  <!-- Golden / Lime Harmonic Sine Curve -->
+                  <path d="M40 90 C 80 160, 110 20, 150 90 C 190 160, 220 20, 260 90" stroke="#d4ff32" stroke-width="2.5" stroke-linecap="round"/>
+                  
+                  <!-- Blue Harmonic Counter Curve -->
+                  <path d="M40 90 C 80 40, 110 140, 150 90 C 190 40, 220 140, 260 90" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6"/>
+                  
+                  <!-- Equilibrium Intersection point -->
+                  <circle cx="150" cy="90" r="4.5" fill="#d4ff32"/>
+                  <circle cx="150" cy="90" r="9" stroke="#d4ff32" stroke-width="1" stroke-opacity="0.3"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="blueprint-footer">
+              <a href="features.html#assets" class="explore-link">
+                <span>EXPLORE ASSETS</span>
+                <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: TURN FIELD ACTIVITY INTO OPERATIONAL CLARITY -->
+    <section class="section section-feature-split" id="activity">
+      <div class="container">
+        <div class="feature-split-layout">
+          
+          <div class="feature-text-col">
+            <h2 class="feature-heading">
+              Turn field activity<br>
+              into operational clarity
+            </h2>
+            <p class="feature-description">
+              Bring jobs, teams, locations, and live status into one connected workspace. See what needs attention, what is moving, and where your operation stands without switching between systems.
+            </p>
+          </div>
+
+          <div class="feature-visual-col">
+            <div class="mockup-stack mockup-stack-signals">
+              
+              <!-- Background data classification table -->
+              <div class="mockup-sheet">
+                <div class="sheet-header">
+                  <span class="sheet-title">JOB ACTIVITY</span>
+                </div>
+                
+                <div class="sheet-table">
+                  <div class="sheet-row header-row">
+                    <span>Job</span>
+                    <span>Status</span>
+                    <span class="text-right">Priority</span>
+                  </div>
+                  <div class="sheet-row">
+                    <span class="font-mono">HVAC Service #1048</span>
+                    <span class="text-muted">In Progress</span>
+                    <span class="text-right"><span class="badge-dot badge-red">High</span></span>
+                  </div>
+                  <div class="sheet-row">
+                    <span class="font-mono">Site Inspection #218</span>
+                    <span class="text-muted">Scheduled</span>
+                    <span class="text-right"><span class="badge-dot badge-cyan">Medium</span></span>
+                  </div>
+                  <div class="sheet-row">
+                    <span class="font-mono">Equipment Repair #903</span>
+                    <span class="text-muted">At Risk</span>
+                    <span class="text-right"><span class="badge-dot badge-red">Critical</span></span>
+                  </div>
+                </div>
+
+                <div class="sheet-bottom-status">
+                  <span class="status-lime-text">Live Sync Active</span>
+                </div>
+              </div>
+
+              <!-- Overlapping floating alert card -->
+              <div class="floating-alert-card">
+                <div class="alert-top">
+                  <div class="alert-label-group">
+                    <span class="alert-dot-pulse"></span>
+                    <span class="alert-title">URGENT JOB</span>
+                  </div>
+                </div>
+                
+                <p class="alert-msg">
+                  Job #1048 is approaching its SLA deadline.
+                </p>
+
+                <div class="alert-actions">
+                  <button class="btn btn-ghost-sm">Dismiss</button>
+                  <button class="btn btn-purple-sm">View job</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: KEEP EVERY JOB MOVING FORWARD (LEFT FLOATING UI, RIGHT TEXT) -->
+    <section class="section section-feature-split" id="schedule">
+      <div class="container">
+        <div class="feature-split-layout reverse-layout">
+          
+          <div class="feature-visual-col">
+            <div class="mockup-stack mockup-stack-decisions">
+              
+              <!-- Field Schedule / Dispatch Timeline -->
+              <div class="mockup-sheet dispatch-sheet">
+                <div class="sheet-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                  <span class="sheet-title">DISPATCH TIMELINE</span>
+                  <span style="font-size: 0.75rem; font-weight: 700; color: #38bdf8; letter-spacing: 0.05em; font-family: var(--font-mono, monospace);">MON 12</span>
+                </div>
+                
+                <div class="dispatch-timeline">
+                  <div class="timeline-entry">
+                    <span class="timeline-time">08:00</span>
+                    <div class="timeline-bar">
+                      <span class="timeline-team">Team Alpha</span>
+                      <span class="timeline-task">HVAC Service</span>
+                    </div>
+                  </div>
+                  <div class="timeline-entry">
+                    <span class="timeline-time">10:30</span>
+                    <div class="timeline-bar">
+                      <span class="timeline-team">Team Bravo</span>
+                      <span class="timeline-task">Site Inspection</span>
+                    </div>
+                  </div>
+                  <div class="timeline-entry">
+                    <span class="timeline-time">13:00</span>
+                    <div class="timeline-bar bar-alert">
+                      <span class="timeline-team">Team Charlie</span>
+                      <span class="timeline-task">Equipment Repair</span>
+                    </div>
+                  </div>
+                  <div class="timeline-entry">
+                    <span class="timeline-time">15:30</span>
+                    <div class="timeline-bar">
+                      <span class="timeline-team">Team Alpha</span>
+                      <span class="timeline-task">Preventive Maintenance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Dispatch Status Card Overlay -->
+              <div class="floating-decision-card">
+                <div class="decision-card-header">
+                  <span class="decision-sparkle">✦</span>
+                  <span class="decision-header-title">Dispatch Status</span>
+                </div>
+
+                <div class="decision-row-item">
+                  <span class="row-label">Assigned</span>
+                  <span class="metric-badge badge-teal" style="font-weight: 700; padding: 2px 8px;">12 Assigned</span>
+                </div>
+
+                <div class="decision-row-item">
+                  <span class="row-label">Unassigned</span>
+                  <span class="metric-badge badge-gray" style="font-weight: 700; padding: 2px 8px;">3 Unassigned</span>
+                </div>
+
+                <div class="decision-row-item">
+                  <span class="row-label">At Risk</span>
+                  <span class="metric-badge badge-orange" style="font-weight: 700; padding: 2px 8px;">2 At Risk</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="feature-text-col">
+            <h2 class="feature-heading">
+              Keep every job<br>
+              moving forward
+            </h2>
+            <p class="feature-description">
+              Connect schedules, assignments, service windows, and field progress so teams always know what is next and who owns the work.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: 4-COLUMN PILLARS -->
+    <section class="section section-pillars" id="pillars">
+      <div class="container">
+        <div class="pillars-grid">
+          
+          <!-- Pillar 1: Job Control (Cyan) -->
+          <div class="pillar-card pillar-cyan">
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                <path d="m9 14 2 2 4-4"/>
+                <path d="M9 10h6"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">JOB CONTROL</h3>
+            <p class="pillar-desc">
+              Manage every job from request to completion.
+            </p>
+          </div>
+
+          <!-- Pillar 2: Team Visibility (Purple) -->
+          <div class="pillar-card pillar-purple">
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">TEAM VISIBILITY</h3>
+            <p class="pillar-desc">
+              Know who is available, assigned, active, and overloaded.
+            </p>
+          </div>
+
+          <!-- Pillar 3: Asset Awareness (Amber) -->
+          <div class="pillar-card pillar-amber">
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">ASSET AWARENESS</h3>
+            <p class="pillar-desc">
+              Track equipment, vehicles, maintenance, and inspections.
+            </p>
+          </div>
+
+          <!-- Pillar 4: Operational Performance (Green) -->
+          <div class="pillar-card pillar-green">
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                <polyline points="16 7 22 7 22 13"/>
+                <path d="M2 20h20" stroke-opacity="0.4"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">OPERATIONAL PERFORMANCE</h3>
+            <p class="pillar-desc">
+              Measure completion, SLA, utilization, and field productivity.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: HIGH-CONTRAST TESTIMONIAL CARDS -->
+    <section class="section section-testimonials" id="testimonials">
+      <div class="container">
+        <div class="testimonials-grid">
+          
+          <!-- Testimonial Card 1 -->
+          <div class="testimonial-card card-mint">
+            <blockquote class="testimonial-quote">
+              “PREFIOP gives our operations team a much clearer picture of what is happening across every site and every active job.”
+            </blockquote>
+            
+            <div class="testimonial-author">
+              <span class="author-name">Elena Morgan</span>
+              <span class="author-title">Operations Director · Northstar Facilities</span>
+            </div>
+          </div>
+
+          <!-- Testimonial Card 2 -->
+          <div class="testimonial-card card-lime">
+            <blockquote class="testimonial-quote">
+              “Our dispatchers can see workload, availability, and priority work without jumping between multiple tools.”
+            </blockquote>
+            
+            <div class="testimonial-author">
+              <span class="author-name">Marcus Reed</span>
+              <span class="author-title">Field Operations Manager · Vertex Services</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: FINAL CALL TO ACTION -->
+    <section class="section section-bottom-cta" id="cta">
+      <div class="container text-center">
+        <h2 class="bottom-cta-heading">
+          Your field operation.<br>
+          One clear view.
+        </h2>
+        <p class="bottom-cta-subtext">
+          Coordinate the work, people, and resources that keep your operation moving.
+        </p>
+
+        <div class="bottom-cta-buttons">
+          <a href="pricing.html" class="btn btn-primary">Explore PREFIOP</a>
+          <a href="#interactive-demo" class="btn btn-secondary-outline">View platform</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+          <!-- FOOTER -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand identity column -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo footer-logo" aria-label="PREFIOP Homepage">
+            <svg class="logo-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.75"/>
+              <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="1.75"/>
+              <path d="M14 1V7M14 21V27M1 14H7M21 14H27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="logo-text">PREFIOP</span>
+          </a>
+          <p class="footer-tagline">
+            Premium field operations, built around the work that matters.
+          </p>
+          <div class="footer-status-indicator">
+            <span class="status-dot"></span>
+            <span class="status-label">All Systems Operational</span>
+          </div>
+        </div>
+
+        <!-- Links Column 1: PLATFORM -->
+        <div class="footer-links-col">
+          <p class="footer-heading">PLATFORM</p>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="index.html#interactive-demo">Live Demo</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 2: COMPANY -->
+        <div class="footer-links-col">
+          <p class="footer-heading">COMPANY</p>
+          <ul class="footer-links-list">
+            <li><a href="about.html">About PREFIOP</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 3: LEGAL -->
+        <div class="footer-links-col">
+          <p class="footer-heading">LEGAL</p>
+          <ul class="footer-links-list">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom copyright & legal -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">© 2026 PREFIOP, Inc. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

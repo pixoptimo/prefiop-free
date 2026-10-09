@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | PREFIOP</title>
+  <meta name="description" content="The requested field operations page or resource could not be found.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Ambient background glow -->
+  <div class="ambient-glow ambient-glow-top" aria-hidden="true"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="site-header" id="header">
+        <div class="header-container">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="PREFIOP Home">
+        <svg class="logo-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.75"/>
+          <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="1.75"/>
+          <path d="M14 1V7M14 21V27M1 14H7M21 14H27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">PREFIOP</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-links" id="primary-navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Platform</a>
+        <a href="features.html" class="nav-link">Features</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Auth & CTA Actions -->
+      <div class="header-actions">
+        <a href="pricing.html" class="btn btn-primary btn-sm">Get started</a>
+        
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <nav class="mobile-nav-links">
+          <a href="index.html" class="mobile-nav-link">Platform</a>
+          <a href="features.html" class="mobile-nav-link">Features</a>
+          <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+          <a href="about.html" class="mobile-nav-link">About</a>
+          <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </nav>
+        <div class="mobile-drawer-actions">
+          <a href="pricing.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Get started</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT: 404 ERROR PAGE -->
+  <main class="error-shell">
+    <div class="container">
+      <div class="error-card">
+        
+        <div class="error-code">404</div>
+        <h1 class="error-headline">Operational Route Not Found</h1>
+        <p class="error-desc">
+          The requested page, job resource, or operational link could not be located. It may have moved or been updated.
+        </p>
+        
+        <div class="error-terminal" role="status" aria-label="Diagnostic trace error status">
+          <span class="error-status-dot" aria-hidden="true"></span>
+          <span class="error-status-text">STATUS 404 // ROUTE_NOT_FOUND // PREFIOP_OPERATIONS_HUB</span>
+        </div>
+
+          <div class="error-actions">
+            <a href="index.html" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              Return Home
+            </a>
+            <a href="features.html" class="btn btn-secondary-outline">View Features</a>
+            <a href="contact.html" class="btn btn-secondary-outline">Contact Us</a>
+          </div>
+
+      </div>
+    </div>
+  </main>
+
+          <!-- FOOTER -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand identity column -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo footer-logo" aria-label="PREFIOP Homepage">
+            <svg class="logo-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.75"/>
+              <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="1.75"/>
+              <path d="M14 1V7M14 21V27M1 14H7M21 14H27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="logo-text">PREFIOP</span>
+          </a>
+          <p class="footer-tagline">
+            Premium field operations, built around the work that matters.
+          </p>
+          <div class="footer-status-indicator">
+            <span class="status-dot"></span>
+            <span class="status-label">All Systems Operational</span>
+          </div>
+        </div>
+
+        <!-- Links Column 1: PLATFORM -->
+        <div class="footer-links-col">
+          <p class="footer-heading">PLATFORM</p>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="index.html#interactive-demo">Live Demo</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 2: COMPANY -->
+        <div class="footer-links-col">
+          <p class="footer-heading">COMPANY</p>
+          <ul class="footer-links-list">
+            <li><a href="about.html">About PREFIOP</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 3: LEGAL -->
+        <div class="footer-links-col">
+          <p class="footer-heading">LEGAL</p>
+          <ul class="footer-links-list">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom copyright & legal -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">© 2026 PREFIOP, Inc. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features — PREFIOP Premium Field Operations</title>
+  <meta name="description" content="Manage jobs, teams, schedules, assets, and field activity from one connected workspace. Explore all PREFIOP platform features.">
+  
+  <!-- Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Ambient background glow effects -->
+  <div class="ambient-glow ambient-glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-middle" aria-hidden="true"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="site-header" id="header">
+        <div class="header-container">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="PREFIOP Home">
+        <svg class="logo-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.75"/>
+          <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="1.75"/>
+          <path d="M14 1V7M14 21V27M1 14H7M21 14H27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">PREFIOP</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-links" id="primary-navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Platform</a>
+        <a href="features.html" class="nav-link active">Features</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Auth & CTA Actions -->
+      <div class="header-actions">
+        <a href="pricing.html" class="btn btn-primary btn-sm">Get started</a>
+        
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <nav class="mobile-nav-links">
+          <a href="index.html" class="mobile-nav-link">Platform</a>
+          <a href="features.html" class="mobile-nav-link active">Features</a>
+          <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+          <a href="about.html" class="mobile-nav-link">About</a>
+          <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </nav>
+        <div class="mobile-drawer-actions">
+          <a href="pricing.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Get started</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section features-hero-section">
+      <div class="container text-center">
+        <div class="info-badge" style="margin: 0 auto 20px;">
+          <span class="sparkle-icon">✦</span>
+          <span>PLATFORM FEATURES</span>
+        </div>
+
+        <h1 class="features-headline">
+          Everything your field<br class="desktop-br">
+          operation needs.
+        </h1>
+
+        <p class="features-subtext">
+          Manage jobs, teams, schedules, assets, and field activity from one connected workspace.
+        </p>
+
+        <div class="hero-cta-group" style="margin-top: 32px; justify-content: center;">
+          <a href="pricing.html" class="btn btn-primary">Explore platform</a>
+          <a href="index.html#interactive-demo" class="btn btn-secondary">View live demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE FEATURES SECTION -->
+    <section class="section features-grid-section" id="core-features">
+      <div class="container">
+        <div class="section-heading text-center">
+          <div class="info-badge" style="margin: 0 auto 16px;">
+            <span class="sparkle-icon">✦</span>
+            <span>CAPABILITIES</span>
+          </div>
+          <h2 class="section-title">Core Features</h2>
+          <p class="section-matrix-sub">Purpose-built tools designed around the day-to-day rhythm of field execution.</p>
+        </div>
+
+        <div class="core-features-grid">
+          
+          <!-- Feature 1: Job Management -->
+          <div class="core-feature-card">
+            <div class="core-feature-icon-wrap" style="background: rgba(56, 189, 248, 0.12); color: #38bdf8;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+            </div>
+            <h3 class="core-feature-title">Job Management</h3>
+            <p class="core-feature-desc">
+              Create, assign, prioritize, and track every job from start to completion.
+            </p>
+            <div class="core-feature-meta">
+              <span>WORK ORDERS</span>
+              <span style="color: #38bdf8;">SLA TRACKING</span>
+            </div>
+          </div>
+
+          <!-- Feature 2: Dispatch & Scheduling -->
+          <div class="core-feature-card" id="dispatch">
+            <div class="core-feature-icon-wrap" style="background: rgba(52, 211, 153, 0.12); color: #34d399;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+            </div>
+            <h3 class="core-feature-title">Dispatch & Scheduling</h3>
+            <p class="core-feature-desc">
+              Plan schedules, assign teams, and respond quickly to changing priorities.
+            </p>
+            <div class="core-feature-meta">
+              <span>CALENDAR & TIMELINE</span>
+              <span style="color: #34d399;">ROUTE DISPATCH</span>
+            </div>
+          </div>
+
+          <!-- Feature 3: Team Management -->
+          <div class="core-feature-card" id="teams">
+            <div class="core-feature-icon-wrap" style="background: rgba(168, 85, 247, 0.12); color: #a855f7;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="core-feature-title">Team Management</h3>
+            <p class="core-feature-desc">
+              Track availability, workload, assignments, and field team activity.
+            </p>
+            <div class="core-feature-meta">
+              <span>CREW CAPACITY</span>
+              <span style="color: #a855f7;">ACTIVE WORKLOAD</span>
+            </div>
+          </div>
+
+          <!-- Feature 4: Asset Management -->
+          <div class="core-feature-card" id="assets">
+            <div class="core-feature-icon-wrap" style="background: rgba(251, 146, 60, 0.12); color: #fb923c;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="6" width="20" height="12" rx="2"/>
+                <path d="M12 12h.01"/>
+                <path d="M17 12h.01"/>
+                <path d="M7 12h.01"/>
+              </svg>
+            </div>
+            <h3 class="core-feature-title">Asset Management</h3>
+            <p class="core-feature-desc">
+              Monitor equipment, vehicles, maintenance, inspections, and asset status.
+            </p>
+            <div class="core-feature-meta">
+              <span>EQUIPMENT LOGS</span>
+              <span style="color: #fb923c;">INSPECTIONS</span>
+            </div>
+          </div>
+
+          <!-- Feature 5: Customer Management -->
+          <div class="core-feature-card">
+            <div class="core-feature-icon-wrap" style="background: rgba(56, 189, 248, 0.12); color: #38bdf8;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h3 class="core-feature-title">Customer Management</h3>
+            <p class="core-feature-desc">
+              Keep customer details, service history, locations, and active work connected.
+            </p>
+            <div class="core-feature-meta">
+              <span>SERVICE PROFILES</span>
+              <span style="color: #38bdf8;">HISTORY LOG</span>
+            </div>
+          </div>
+
+          <!-- Feature 6: Location Management -->
+          <div class="core-feature-card">
+            <div class="core-feature-icon-wrap" style="background: rgba(52, 211, 153, 0.12); color: #34d399;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3 class="core-feature-title">Location Management</h3>
+            <p class="core-feature-desc">
+              Manage service locations, site details, active jobs, and operational activity.
+            </p>
+            <div class="core-feature-meta">
+              <span>SITE DETAILS</span>
+              <span style="color: #34d399;">GEO TRACKING</span>
+            </div>
+          </div>
+
+          <!-- Feature 7: Reports & Analytics -->
+          <div class="core-feature-card">
+            <div class="core-feature-icon-wrap" style="background: rgba(168, 85, 247, 0.12); color: #a855f7;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+            </div>
+            <h3 class="core-feature-title">Reports & Analytics</h3>
+            <p class="core-feature-desc">
+              Turn operational activity into clear performance insights.
+            </p>
+            <div class="core-feature-meta">
+              <span>FIELD METRICS</span>
+              <span style="color: #a855f7;">SLA INSIGHTS</span>
+            </div>
+          </div>
+
+          <!-- Feature 8: Notifications -->
+          <div class="core-feature-card">
+            <div class="core-feature-icon-wrap" style="background: rgba(251, 146, 60, 0.12); color: #fb923c;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+              </svg>
+            </div>
+            <h3 class="core-feature-title">Notifications</h3>
+            <p class="core-feature-desc">
+              Stay informed about urgent jobs, delays, schedule changes, and operational issues.
+            </p>
+            <div class="core-feature-meta">
+              <span>LIVE ALERTS</span>
+              <span style="color: #fb923c;">URGENT SIGNALS</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CALL TO ACTION -->
+    <section class="section section-bottom-cta">
+      <div class="container text-center">
+        <h2 class="bottom-cta-heading">
+          Keep every field operation moving.
+        </h2>
+        <p class="bottom-cta-subtext">
+          One workspace for the people, work, and resources behind every job.
+        </p>
+        <div class="bottom-cta-buttons">
+          <a href="pricing.html" class="btn btn-primary">Explore Platform</a>
+          <a href="index.html#interactive-demo" class="btn btn-secondary-outline">View Demo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+          <!-- FOOTER -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand identity column -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo footer-logo" aria-label="PREFIOP Homepage">
+            <svg class="logo-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.75"/>
+              <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="1.75"/>
+              <path d="M14 1V7M14 21V27M1 14H7M21 14H27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="logo-text">PREFIOP</span>
+          </a>
+          <p class="footer-tagline">
+            Premium field operations, built around the work that matters.
+          </p>
+          <div class="footer-status-indicator">
+            <span class="status-dot"></span>
+            <span class="status-label">All Systems Operational</span>
+          </div>
+        </div>
+
+        <!-- Links Column 1: PLATFORM -->
+        <div class="footer-links-col">
+          <p class="footer-heading">PLATFORM</p>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="index.html#interactive-demo">Live Demo</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 2: COMPANY -->
+        <div class="footer-links-col">
+          <p class="footer-heading">COMPANY</p>
+          <ul class="footer-links-list">
+            <li><a href="about.html">About PREFIOP</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 3: LEGAL -->
+        <div class="footer-links-col">
+          <p class="footer-heading">LEGAL</p>
+          <ul class="footer-links-list">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom copyright & legal -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">© 2026 PREFIOP, Inc. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

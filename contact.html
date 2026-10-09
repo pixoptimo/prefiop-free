@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — PREFIOP Premium Field Operations</title>
+  <meta name="description" content="Have questions about PREFIOP, the platform, or how it can fit your operation? We'd like to hear from you.">
+  
+  <!-- Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Ambient background glow effects -->
+  <div class="ambient-glow ambient-glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-middle" aria-hidden="true"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="site-header" id="header">
+        <div class="header-container">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="PREFIOP Home">
+        <svg class="logo-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.75"/>
+          <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="1.75"/>
+          <path d="M14 1V7M14 21V27M1 14H7M21 14H27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">PREFIOP</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-links" id="primary-navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Platform</a>
+        <a href="features.html" class="nav-link">Features</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <!-- Auth & CTA Actions -->
+      <div class="header-actions">
+        <a href="pricing.html" class="btn btn-primary btn-sm">Get started</a>
+        
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <nav class="mobile-nav-links">
+          <a href="index.html" class="mobile-nav-link">Platform</a>
+          <a href="features.html" class="mobile-nav-link">Features</a>
+          <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+          <a href="about.html" class="mobile-nav-link">About</a>
+          <a href="contact.html" class="mobile-nav-link active">Contact</a>
+        </nav>
+        <div class="mobile-drawer-actions">
+          <a href="pricing.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Get started</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- CONTACT HERO SECTION -->
+    <section class="section contact-hero-section">
+      <div class="container text-center">
+        <div class="info-badge" style="margin: 0 auto 20px;">
+          <span class="sparkle-icon">✦</span>
+          <span>GET IN TOUCH</span>
+        </div>
+
+        <h1 class="contact-headline">
+          Let's talk about your<br class="desktop-br">
+          field operation.
+        </h1>
+
+        <p class="contact-subtext">
+          Have questions about PREFIOP, the platform, or how it can fit your operation? We'd like to hear from you.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT MAIN GRID -->
+    <section class="section contact-main-section">
+      <div class="container">
+        
+        <!-- CONTACT FORM (CENTER ALIGNED SINGLE COLUMN) -->
+        <div class="contact-form-container" style="max-width: 680px; margin: 0 auto;">
+          <div class="contact-form-card">
+            
+            <!-- Topic Switcher Tabs -->
+            <div class="contact-topic-tabs" role="tablist" aria-label="Contact Inquiries">
+              <button type="button" class="topic-tab active" role="tab" aria-selected="true" data-topic="product">
+                <svg class="tab-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8 1a7 7 0 100 14A7 7 0 008 1zm.75 3.5v4.25l3.25 1.95-.75 1.23-3.75-2.25V4.5h1.25z"/>
+                </svg>
+                <span>Product Questions</span>
+              </button>
+              <button type="button" class="topic-tab" role="tab" aria-selected="false" data-topic="implementation">
+                <svg class="tab-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M11.5 2a1.5 1.5 0 00-1.5 1.5v.5h-4v-.5a1.5 1.5 0 00-3 0v.5H2A1.5 1.5 0 00.5 5.5v8A1.5 1.5 0 002 15h12a1.5 1.5 0 001.5-1.5v-8A1.5 1.5 0 0014 4h-1v-.5a1.5 1.5 0 00-1.5-1.5z"/>
+                </svg>
+                <span>Implementation</span>
+              </button>
+              <button type="button" class="topic-tab" role="tab" aria-selected="false" data-topic="general">
+                <svg class="tab-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M1.5 3A1.5 1.5 0 000 4.5v7A1.5 1.5 0 001.5 13h13a1.5 1.5 0 001.5-1.5v-7A1.5 1.5 0 001.5 3h-13zm0 1h13a.5.5 0 01.5.5v.724l-7 4.375-7-4.375V4.5a.5.5 0 01.5-.5z"/>
+                </svg>
+                <span>General Inquiries</span>
+              </button>
+            </div>
+
+            <div class="form-header-intro">
+              <h2 class="form-title" id="formTopicTitle">Product Questions</h2>
+              <p class="form-subtitle" id="formTopicSubtitle">
+                Learn more about features, workflows, and platform capabilities.
+              </p>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="contactName" class="form-label">Name <span class="required-star">*</span></label>
+                <input type="text" id="contactName" name="name" class="form-input" placeholder="Your name" required autocomplete="name">
+                <span class="field-error-msg" id="contactNameError"></span>
+              </div>
+
+              <div class="form-row-two">
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Email <span class="required-star">*</span></label>
+                  <input type="email" id="contactEmail" name="email" class="form-input" placeholder="you@example.com" required autocomplete="email">
+                  <span class="field-error-msg" id="contactEmailError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="contactCompany" class="form-label">Company <span class="required-star">*</span></label>
+                  <input type="text" id="contactCompany" name="company" class="form-input" placeholder="Company name" required autocomplete="organization">
+                  <span class="field-error-msg" id="contactCompanyError"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Subject <span class="required-star">*</span></label>
+                <input type="text" id="contactSubject" name="subject" class="form-input" placeholder="What can we help with?" required>
+                <span class="field-error-msg" id="contactSubjectError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message <span class="required-star">*</span></label>
+                <textarea id="contactMessage" name="message" class="form-input form-textarea" rows="4" placeholder="Tell us what you're working on." required></textarea>
+                <span class="field-error-msg" id="contactMessageError"></span>
+              </div>
+
+              <div class="form-actions-row">
+                <button type="submit" class="btn btn-primary btn-block btn-lg" id="contactSubmitBtn">
+                  <span class="btn-text">Send Message</span>
+                  <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <p class="form-privacy-note">
+                  We value your operational privacy. We never share or sell contact details.
+                </p>
+              </div>
+
+              <!-- Submission Success State (Revealed via JS) -->
+              <div class="form-success-banner" id="contactSuccessBanner" style="display: none;" role="status">
+                <div class="success-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="11" stroke="#00e599" stroke-width="2"/>
+                    <path d="M7 12l3.5 3.5 7-7" stroke="#00e599" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="success-text-wrap">
+                  <p class="success-title">Message sent successfully</p>
+                  <p class="success-desc">
+                    Thank you, <strong id="successRecipientName">there</strong>. A PREFIOP field operations specialist has received your message and will be in touch shortly.
+                  </p>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CALL TO ACTION -->
+    <section class="section section-bottom-cta">
+      <div class="container text-center">
+        <h2 class="bottom-cta-heading">
+          Build a clearer<br>
+          field operation.
+        </h2>
+        <p class="section-subtext" style="max-width: 560px; margin: 16px auto 32px; color: var(--text-secondary); font-size: 1.0625rem;">
+          Connect your jobs, teams, schedules, and resources in one operational workspace.
+        </p>
+        <div class="bottom-cta-buttons">
+          <a href="index.html" class="btn btn-primary">Explore PREFIOP</a>
+          <a href="pricing.html" class="btn btn-secondary-outline">View Plans</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+          <!-- FOOTER -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand identity column -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo footer-logo" aria-label="PREFIOP Homepage">
+            <svg class="logo-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.75"/>
+              <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="1.75"/>
+              <path d="M14 1V7M14 21V27M1 14H7M21 14H27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="logo-text">PREFIOP</span>
+          </a>
+          <p class="footer-tagline">
+            Premium field operations, built around the work that matters.
+          </p>
+          <div class="footer-status-indicator">
+            <span class="status-dot"></span>
+            <span class="status-label">All Systems Operational</span>
+          </div>
+        </div>
+
+        <!-- Links Column 1: PLATFORM -->
+        <div class="footer-links-col">
+          <p class="footer-heading">PLATFORM</p>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="index.html#interactive-demo">Live Demo</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 2: COMPANY -->
+        <div class="footer-links-col">
+          <p class="footer-heading">COMPANY</p>
+          <ul class="footer-links-list">
+            <li><a href="about.html">About PREFIOP</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 3: LEGAL -->
+        <div class="footer-links-col">
+          <p class="footer-heading">LEGAL</p>
+          <ul class="footer-links-list">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom copyright & legal -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">© 2026 PREFIOP, Inc. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

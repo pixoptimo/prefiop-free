@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — PREFIOP Field Operations Platform</title>
+  <meta name="description" content="Review the terms and conditions governing access to and use of the PREFIOP field operations platform, dispatch tools, mobile sync, and enterprise services.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Ambient background glow -->
+  <div class="ambient-glow ambient-glow-top" aria-hidden="true"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="site-header" id="header">
+        <div class="header-container">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="PREFIOP Home">
+        <svg class="logo-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.75"/>
+          <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="1.75"/>
+          <path d="M14 1V7M14 21V27M1 14H7M21 14H27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">PREFIOP</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-links" id="primary-navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Platform</a>
+        <a href="features.html" class="nav-link">Features</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Auth & CTA Actions -->
+      <div class="header-actions">
+        <a href="pricing.html" class="btn btn-primary btn-sm">Get started</a>
+        
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <nav class="mobile-nav-links">
+          <a href="index.html" class="mobile-nav-link">Platform</a>
+          <a href="features.html" class="mobile-nav-link">Features</a>
+          <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+          <a href="about.html" class="mobile-nav-link">About</a>
+          <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </nav>
+        <div class="mobile-drawer-actions">
+          <a href="pricing.html" class="btn btn-primary" style="width: 100%; justify-content: center;">Get started</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT: TERMS OF SERVICE -->
+  <main class="legal-shell">
+    <div class="container">
+      <article class="legal-card">
+        
+        <header class="legal-header">
+          <div class="badge badge-accent">MASTER SERVICES AGREEMENT</div>
+          <h1 class="legal-title">Terms of Service</h1>
+          <div class="legal-meta">Last Updated: October 7, 2026 • Version 3.1 • Effective Immediately</div>
+        </header>
+
+        <!-- Quick navigation TOC -->
+        <nav class="legal-toc" aria-label="Table of contents">
+          <div class="legal-toc-title">Table of Contents</div>
+          <div class="legal-toc-list">
+            <a href="#service-access">1. Service Access &amp; Organization Accounts</a>
+            <a href="#operational-use">2. Operational Use, Dispatch &amp; Fair Limits</a>
+            <a href="#sla-uptime">3. Service Level Agreements &amp; Availability</a>
+            <a href="#ip-rights">4. Intellectual Property &amp; Customer Data Ownership</a>
+            <a href="#fees-billing">5. Subscription Fees, Invoicing &amp; Workspaces</a>
+            <a href="#limitation">6. Warranties &amp; Limitation of Liability</a>
+            <a href="#termination">7. Term, Termination &amp; Data Export</a>
+          </div>
+        </nav>
+
+        <section class="legal-section" id="service-access">
+          <h2>1. Service Access &amp; Organization Accounts</h2>
+          <p>
+            By establishing an account or using the PREFIOP platform, your organization agrees to these Terms of Service. Authorized customer representatives must ensure account credentials, mobile device logins, and API access keys are safeguarded against unauthorized access.
+          </p>
+          <p>
+            You are responsible for all dispatch commands, job updates, technician permissions, and administrative operations originating under your organization ID and scoped user accounts.
+          </p>
+        </section>
+
+        <section class="legal-section" id="operational-use">
+          <h2>2. Operational Use, Dispatch &amp; Fair Limits</h2>
+          <p>
+            PREFIOP provides real-time operational coordination for jobs, field teams, schedules, assets, and service locations. The following operational provisions apply:
+          </p>
+          <ul>
+            <li><strong>Fair Use Limits:</strong> Plan-specified job quotas, active technician seats, and storage allotments apply on a billing cycle. Warning notices trigger at 80% and 95% capacity utilization.</li>
+            <li><strong>Data Retention:</strong> Active job schedules, completed inspection logs, and asset service history remain queryable according to chosen tier schedules (30 days for Starter, 1 year for Professional, and custom multi-year retention for Enterprise).</li>
+            <li><strong>Platform Integrity:</strong> Customers agree not to reverse engineer or interfere with the core dispatch algorithms, scheduling engines, or platform APIs beyond documented usage.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section" id="sla-uptime">
+          <h2>3. Service Level Agreements &amp; Availability</h2>
+          <p>
+            For Enterprise tier subscriptions, PREFIOP guarantees 99.99% monthly service availability for field dispatch endpoints, mobile sync, and core web workspaces. Service credits are awarded upon documented unscheduled downtime exceeding specified thresholds:
+          </p>
+          <ul>
+            <li>&lt; 99.99% to 99.90%: 10% monthly service credit</li>
+            <li>&lt; 99.90% to 99.00%: 25% monthly service credit</li>
+            <li>&lt; 99.00%: 50% monthly service credit</li>
+          </ul>
+        </section>
+
+        <section class="legal-section" id="ip-rights">
+          <h2>4. Intellectual Property &amp; Customer Data Ownership</h2>
+          <p>
+            <strong>Customer Ownership:</strong> You retain exclusive ownership, title, and all intellectual property rights to your operational data, job histories, technician records, asset registries, customer databases, and service locations.
+          </p>
+          <p>
+            <strong>PREFIOP Platform:</strong> PREFIOP retains all rights, title, and interest in and to the field operations software, dispatch algorithms, UI components, predictive scheduling models, and system APIs.
+          </p>
+        </section>
+
+        <section class="legal-section" id="fees-billing">
+          <h2>5. Subscription Fees, Invoicing &amp; Workspaces</h2>
+          <p>
+            Fees are calculated on a prepaid monthly or annual billing cycle. Workspace upgrades, additional technician licenses, or enterprise add-ons are billed according to published pricing or custom enterprise order agreements.
+          </p>
+        </section>
+
+        <section class="legal-section" id="limitation">
+          <h2>6. Warranties &amp; Limitation of Liability</h2>
+          <p>
+            Except as explicitly provided in an executed Enterprise SLA, the platform is provided "as is". Neither party shall be liable for indirect, incidental, punitive, or consequential damages resulting from operational delays, weather-related scheduling adjustments, or third-party telecommunication interruptions.
+          </p>
+        </section>
+
+        <section class="legal-section" id="termination">
+          <h2>7. Term, Termination &amp; Data Export</h2>
+          <p>
+            Either party may terminate a subscription upon 30 days written notice or immediately in the event of a material breach. Upon termination, customers have 30 calendar days to export all stored jobs, team histories, asset records, and performance metrics via standard CSV exports or REST API endpoints before permanent secure data purging.
+          </p>
+          <p>
+            For legal notices or questions regarding these terms, contact <a href="mailto:legal@prefiop.example" style="color: var(--accent-cyan); text-decoration: underline;">legal@prefiop.example</a>.
+          </p>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+          <!-- FOOTER -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand identity column -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo footer-logo" aria-label="PREFIOP Homepage">
+            <svg class="logo-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.75"/>
+              <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="1.75"/>
+              <path d="M14 1V7M14 21V27M1 14H7M21 14H27" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="logo-text">PREFIOP</span>
+          </a>
+          <p class="footer-tagline">
+            Premium field operations, built around the work that matters.
+          </p>
+          <div class="footer-status-indicator">
+            <span class="status-dot"></span>
+            <span class="status-label">All Systems Operational</span>
+          </div>
+        </div>
+
+        <!-- Links Column 1: PLATFORM -->
+        <div class="footer-links-col">
+          <p class="footer-heading">PLATFORM</p>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="index.html#interactive-demo">Live Demo</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 2: COMPANY -->
+        <div class="footer-links-col">
+          <p class="footer-heading">COMPANY</p>
+          <ul class="footer-links-list">
+            <li><a href="about.html">About PREFIOP</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Column 3: LEGAL -->
+        <div class="footer-links-col">
+          <p class="footer-heading">LEGAL</p>
+          <ul class="footer-links-list">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom copyright & legal -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">© 2026 PREFIOP, Inc. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
