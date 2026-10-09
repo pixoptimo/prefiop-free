@@ -1,8 +1,8 @@
-# PREFIOP — Modern Field Operations HTML Template
+# PREFIOP Free — Premium Field Operations HTML SaaS Template
 
-PREFIOP is a modern, high-performance SaaS landing page and web template crafted specifically for field operations, dispatch, asset management, and workforce scheduling platforms.
+**PREFIOP Free** is a modern, high-performance free SaaS landing page and web template crafted by [PixOptimo](https://pixoptimo.com) specifically for field operations, dispatch, asset management, and workforce scheduling platforms.
 
-Built with **100% Vanilla HTML5, CSS3, and modern JavaScript**, PREFIOP requires zero build tools, node dependencies, or external runtime libraries.
+Built with **100% Vanilla HTML5, CSS3, and modern JavaScript**, PREFIOP Free requires zero build tools, node dependencies, or external runtime libraries.
 
 ---
 
@@ -28,12 +28,12 @@ Built with **100% Vanilla HTML5, CSS3, and modern JavaScript**, PREFIOP requires
 ## Folder Structure
 
 ```
-PREFIOP/
+prefiop-free/
 │
 ├── index.html          # Homepage
 ├── features.html       # Platform Features
 ├── pricing.html        # Pricing Plans & FAQ
-├── about.html          # About PREFIOP
+├── about.html          # About PREFIOP Free
 ├── contact.html        # Contact Form
 ├── 404.html            # 404 Error Page
 ├── privacy.html        # Privacy Policy
@@ -61,7 +61,7 @@ PREFIOP/
 
 ## Getting Started
 
-Because PREFIOP is built with pure web standards, no compilation or npm installation is required:
+Because PREFIOP Free is built with pure web standards, no compilation or npm installation is required:
 
 1. **Directly open in browser**:
    Double click any HTML file (e.g. `index.html`) to open it directly in Google Chrome, Safari, Firefox, or Edge.
@@ -109,6 +109,12 @@ The contact form in `contact.html` is handled in `assets/js/script.js` with clie
 
 ---
 
+## Author & Credits
+
+Designed and crafted by [PixOptimo](https://pixoptimo.com) — discover more free and premium UI templates, landing pages, and web design assets.
+
+---
+
 ## License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is open-source and free to use under the MIT License — see the [LICENSE](LICENSE) file for details.
